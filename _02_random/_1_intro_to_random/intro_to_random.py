@@ -9,7 +9,8 @@ if __name__ == '__main__':
     #   end = upper bound of random number
 
     # Prints out 5 random whole numbers between 0 and 100 (0 and 100 both included)
-    for i in range(5):
+    for i in range(5): # TODO: Run the program to see the difference between the 2 pop-ups
+    #     #   The 2nd pop-up
         number = random.randint(0, 100)
         print(number)
 

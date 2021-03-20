@@ -5,7 +5,7 @@ if __name__ == '__main__':
     window.withdraw()
 
     # TODO: Run the program to see the difference between the 2 pop-ups
-    #   The 2nd pop-up does not add the 2 numbers
+    #     #   The 2nd pop-up does not add the 2 numbers
     #   str() changes a number to a word(string)
     #   We are adding "3" + "7" to get 37
     num1 = 3
