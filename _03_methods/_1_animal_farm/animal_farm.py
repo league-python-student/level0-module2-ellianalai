@@ -30,7 +30,7 @@ def show_image(filename=None):
     try:
         image = Image.open(filename)
     except FileNotFoundError as fnf:
-        print("ERROR: Unable to find file " + filename)
+        print("ERROR: Unable to figfnd file " + filename)
         return
 
     # Use Toplevel since a tk window is already being used for the
