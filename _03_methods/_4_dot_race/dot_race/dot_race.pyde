@@ -11,20 +11,22 @@ can_play_sounds = False
 def setup():
     size(800, 200)
     global x
-
+    x=0
     # 1. Set the variable named x to 50.
 
 def draw():
     background(200, 200, 200)
     global x
-    x = 0
+    
     y = 100
     # 2. Draw an ellipse of height and width 50. Make sure to use the x variable for
     #    its X position. Pick a y value that places it half way down the window.
     ellipse (x, y, 50, 50)
     fill ('#C9D4FF')
     if mousePressed:
-        x = 400
+        x = x+20
+    if x > 800:
+        play_sound()
     # 3. Fill in the ellipse with a nice color
     
     # 4. If the mouse is pressed change the x value so that the dot moves to the right
@@ -39,13 +41,6 @@ def draw():
 sound_played = False
 def play_sound():
   
-    if can_play_sounds:
-        if !sound_played:
-            #Minim minim = new Minim(this)
-            #AudioSample sound = minim.loadSample("ding.wav")
-            #sound.trigger()
-            #soundPlayed = true
-            pass
     fill(0)
     textSize(36)
     text("WINNER!!", width/2, height/2)
